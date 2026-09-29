@@ -3,7 +3,6 @@ public class CoolLinkedList {
 	private static int size;
 	private Node head;
 	private Node current;
-	// private Node tail;
 	
 	
 	public CoolLinkedList() {
@@ -15,18 +14,7 @@ public class CoolLinkedList {
 	public Integer size() {
 		return size;
 	}
-	
-//	public void addToFront(String payLoad) {
-//		Node newNode = new Node(payLoad);
-//		if (head == null) {
-//			head = newNode;
-//			current = newNode;
-//		}
-//		newNode.setNextNode(head);
-//		head = newNode;
-//		size++;
-//	}
-	
+
 	public void addToFront(String payLoad) {
 		Node newNode = new Node(payLoad);
 		newNode.setNextNode(head);
